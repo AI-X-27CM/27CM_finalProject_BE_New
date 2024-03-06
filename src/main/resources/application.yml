@@ -1,0 +1,20 @@
+##THYMELEAF DEVELOP
+spring:
+  thymeleaf:
+    cache: false
+
+logging:
+  level:
+    org.springframework: info
+    com.example.demo: debug
+
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:ssl-server.jks
+    key-store-password: test1234
+    key-store-type: JKS
+    keyAlias: selfsigned_localhost_sslserver
+  port: 8443
+  http:
+    port: 8080
